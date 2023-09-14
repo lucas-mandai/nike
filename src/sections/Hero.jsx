@@ -37,6 +37,13 @@ const Hero = () => {
             height={500}
             className='object-contain relative z-10'
            />
+        <div>
+          {shoes.map((shoe) => (
+            <div key={shoe}>
+              <ShoeCard />
+            </div>
+          ))}
+        </div>
 
         </div>
     </section>
